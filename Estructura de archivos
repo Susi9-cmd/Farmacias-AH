@@ -1,0 +1,5 @@
+fahorro-farmacia/
+├── index.html         ← Página de inicio de sesión
+├── dashboard.html     ← Página principal de ventas (productos y compra)
+├── style.css
+├── script.js
