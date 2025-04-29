@@ -1,0 +1,22 @@
+const productos = [
+    { nombre: 'Paracetamol 500mg', precio: 20 },
+    { nombre: 'Ibuprofeno 400mg', precio: 35 },
+    { nombre: 'Amoxicilina 500mg', precio: 60 },
+    { nombre: 'Loratadina 10mg', precio: 25 },
+    { nombre: 'Omeprazol 20mg', precio: 30 }
+];
+
+const contenedor = document.getElementById('productos-lista');
+
+if (contenedor) {
+    productos.forEach(producto => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+        card.innerHTML = `
+            <h3>${producto.nombre}</h3>
+            <p>Precio: $${producto.precio}</p>
+            <button onclick="alert('Producto agregado al carrito')">Agregar</button>
+        `;
+        contenedor.appendChild(card);
+    });
+}
